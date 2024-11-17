@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de [Nombre de los Novios]</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/PinyonScript-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EBGaramond-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Página simulando un PDF -->
+    <div class="page">
+        <header>
+            <h1>Boda de [Nombre de los Novios]</h1>
+            <p>¡Estamos emocionados de compartir este día contigo!</p>
+        </header>
+    </div>
+
+    <div class="page">
+        <!-- Contenido de la siguiente sección -->
+        <section>
+            <h2>Fecha y Ubicación</h2>
+            <p>La boda será el <strong>28 de diciembre de 2024</strong> en <strong>[ubicación]</strong>.</p>
+        </section>
+        <section>
+            <div id="countdown">
+                <h2>Faltan:</h2>
+                <p id="countdown-timer">Cargando...</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="page">
+        <section>
+            <h2>Galería de Fotos</h2>
+            <img src="images/foto1.jpg" alt="Foto de los novios">
+            <img src="images/foto2.jpg" alt="Foto de la boda">
+        </section>
+    </div>
+
+    <script src="scripts/countdown.js"></script>
+</body>
+</html>

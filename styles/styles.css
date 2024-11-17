@@ -1,0 +1,74 @@
+/* General */
+@font-face {
+    font-family: 'PinyonScript';
+    src: url('../fonts/PinyonScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'EBGaramond', serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Simulación de páginas tipo PDF */
+.page {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Diferentes fondos para cada página */
+.page:nth-child(2) {
+    background-color: #b11226; /* Color vino */
+    color: white;
+}
+
+.page:nth-child(3) {
+    background-color: #fef8e4; /* Color beige */
+    color: #333;
+}
+
+/* Títulos */
+h1 {
+    font-family: 'PinyonScript', cursive;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'EBGaramond', serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Galería de imágenes */
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Reloj */
+#countdown {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Eliminar espacios entre páginas */
+body, html {
+    scroll-behavior: smooth;
+    padding: 0;
+}

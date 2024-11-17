@@ -1,0 +1,12 @@
+boda-web/
+│
+├── index.html
+├── styles/
+│   └── styles.css
+├── scripts/
+│   └── countdown.js
+├── images/
+│   └── [Tus imágenes aquí]
+├── fonts/
+│   └── [Tus fuentes aquí]
+└── README.md
