@@ -15,19 +15,20 @@ body {
     background-color: #f4f4f4;
     color: #333;
     width: 100%;
-    overflow-x: hidden; /* Evitar el scroll horizontal */
+    overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+    padding: 0; /* Asegura que no haya padding extra en el cuerpo */
 }
 
 /* Simulación de páginas tipo PDF */
 .page {
     background: white;
-    padding: 5vw; /* Usa un porcentaje para hacer que el padding sea relativo al tamaño de la pantalla */
+    padding: 5vw; /* Espaciado dentro de la página, ajustado para no agregar más espacio entre páginas */
     width: 90%;  /* 90% del ancho de la pantalla */
     max-width: 100%; /* No puede exceder el 100% */
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 2vh auto; /* Margen vertical usando vh */
+    margin: 0; /* Sin margen entre las páginas */
 }
 
 /* Diferentes fondos para cada página */
@@ -45,37 +46,41 @@ body {
 h1 {
     font-family: 'PinyonScript', cursive;
     text-align: center;
-    font-size: 6vw; /* Usamos unidades relativas */
-    margin: 2vh 0;
+    font-size: 6vw; /* Ajusta proporcionalmente al ancho del dispositivo */
+    margin: 0; /* Elimina el margen superior */
+    padding: 0; /* Elimina el relleno */
 }
 
 h2 {
     font-family: 'EBGaramond', serif;
     text-align: center;
-    margin: 2vh 0;
-    font-size: 3vw; /* Ajuste el tamaño relativo de los subtítulos */
+    margin: 0; /* Elimina el margen */
+    font-size: 3vw; /* Ajuste relativo al tamaño de la pantalla */
+    padding: 0;
 }
 
 /* Galería de imágenes */
 img {
-    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    width: 100%; /* Las imágenes ocupan todo el ancho disponible */
     max-width: 100%; /* Evita que se excedan */
-    height: auto; /* Mantiene las proporciones */
+    height: auto; /* Mantiene las proporciones de la imagen */
     display: block;
-    margin: 2vh auto;
+    margin: 0 auto; /* Centra las imágenes */
 }
 
 /* Reloj */
 #countdown {
     text-align: center;
-    font-size: 4vw; /* Relativo al ancho de la pantalla */
-    margin: 2vh 0;
+    font-size: 4vw; /* Tamaño relativo al ancho de la pantalla */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
 }
 
 /* Eliminar espacios entre páginas */
 body, html {
     scroll-behavior: smooth;
     padding: 0;
+    margin: 0;
     width: 100%;
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
