@@ -37,7 +37,7 @@ body, html {
 /* Páginas individuales */
 .page {
     background: white;
-    padding: 5vw 5vw;  /* Proporcional al tamaño de la pantalla */
+    padding: 5em 5em;  /* Proporcional al tamaño de la pantalla */
     width: 90vw;   /* Proporcional al tamaño de la pantalla */
     max-width: 800px; /* Limita el ancho máximo de las páginas */
     border-radius: 10px;
@@ -83,8 +83,9 @@ h2 {
 /* Estilo para los párrafos */
 p {
     font-family: 'EBGaramond', serif;
+    font-weight: normal;
     text-align: center;
-    margin: 2vh 0;
+    margin: 2vh 1vw;
 }
 
 /* Galería de imágenes */
@@ -106,7 +107,7 @@ img {
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 768px) {
     .page {
-        padding: 17vw 7vw; /* Aumenta el padding en pantallas pequeñas */
+        padding: 5em 5em; /* Aumenta el padding en pantallas pequeñas */
         margin: 0; /* Elimina el margen entre las páginas */
     }
 
@@ -122,10 +123,50 @@ img {
 
     p {
         text-align: center;
+        padding: 0 1em;
     }
     
 
     #countdown {
         font-size: 3vw;
     }
+}
+
+.imagen-fecha {
+    display: block;           /* Asegura que la imagen se muestre como bloque */
+    margin: 20px auto;        /* Centra la imagen horizontalmente */
+    width: auto;              /* Mantiene la relación de aspecto */
+    height: 3em;              /* La altura de la imagen será 3 veces el alto del texto */
+}
+
+/* Página con imagen de fondo */
+.background-page {
+    position: relative;
+    width: 100%;
+    height: 120vw; /* Asegura que la página ocupe toda la altura de la ventana */
+    background-image: url('../images/A&A-5.jpg'); /* Ruta de tu imagen */
+    background-size: cover;  /* Mantiene la proporción de la imagen */
+    background-position: center;  /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor para el texto dentro de la imagen */
+.text-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;  /* Cambia el color del texto según tu imagen */
+    font-family: 'EBGaramond', serif;
+    padding: 20px;
+    z-index: 1;  /* Asegura que el texto esté por encima de la imagen */
+}
+
+.text-overlay h2 {
+    font-family: 'PinyonScript', cursive;
+    font-size: 3vw;  /* Ajusta el tamaño del texto dependiendo de la ventana */
+}
+
+.text-overlay p {
+    font-size: 1.5vw;
 }
