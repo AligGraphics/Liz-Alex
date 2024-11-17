@@ -14,14 +14,17 @@ body {
     font-family: 'EBGaramond', serif;
     background-color: #f4f4f4;
     color: #333;
+    width: 100%; /* Asegura que el ancho de la página ocupe el 100% */
+    overflow-x: hidden; /* Elimina el desplazamiento horizontal */
 }
 
 /* Simulación de páginas tipo PDF */
 .page {
     background: white;
     padding: 20px;
-    width: 100%;
-    max-width: 800px;
+    width: 100%; /* Esto hace que ocupe el 100% del ancho */
+    max-width: 100%; /* Evita que se quede con un límite fijo */
+    box-sizing: border-box; /* Garantiza que los márgenes y padding no desborden el contenido */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
@@ -54,8 +57,8 @@ h2 {
 
 /* Galería de imágenes */
 img {
-    width: 100%;
-    max-width: 400px;
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    max-width: 100%; /* Evita que se excedan del ancho del contenedor */
     display: block;
     margin: 10px auto;
 }
@@ -71,4 +74,6 @@ img {
 body, html {
     scroll-behavior: smooth;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Elimina scroll horizontal */
 }
