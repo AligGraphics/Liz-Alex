@@ -51,7 +51,7 @@ body, html {
 
 /* Diferentes fondos para cada página */
 .page:nth-child(2) {
-    background-color: #b11226; /* Color vino */
+    background-color: #641316; /* Color vino */
     color: white;
 }
 
@@ -60,8 +60,12 @@ body, html {
     color: #333;
 }
 
+
+
 /* Títulos */
 h1 {
+    color: #641316;
+    font-weight: normal;  /* Asegúrate de que el peso sea normal */
     font-family: 'PinyonScript', cursive;
     text-align: center;
     font-size: 5vw;  /* Tamaño proporcional */
@@ -70,8 +74,16 @@ h1 {
 
 h2 {
     font-family: 'EBGaramond', serif;
+    font-weight: normal;  /* Asegúrate de que el peso sea normal */
     text-align: center;
     font-size: 3vw;  /* Tamaño proporcional */
+    margin: 2vh 0;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-family: 'EBGaramond', serif;
+    text-align: center;
     margin: 2vh 0;
 }
 
