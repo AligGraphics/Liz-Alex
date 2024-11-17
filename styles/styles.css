@@ -106,7 +106,7 @@ img {
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 768px) {
     .page {
-        padding: 10vw; /* Aumenta el padding en pantallas pequeñas */
+        padding: 16vw; /* Aumenta el padding en pantallas pequeñas */
         margin: 0; /* Elimina el margen entre las páginas */
     }
 
