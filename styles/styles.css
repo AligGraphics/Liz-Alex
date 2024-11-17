@@ -25,7 +25,7 @@ body {
     background: white;
     width: 100%;  /* Se ajusta al 100% del ancho de la pantalla */
     height: auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
     margin: 0; /* Sin margen entre las páginas */
     padding: 5vw; /* Ajuste del espaciado dentro de cada página */
     border-radius: 10px;
@@ -92,7 +92,7 @@ body, html {
 /* Ajustes específicos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .page {
-        padding: 8vw; /* Ajuste de padding para pantallas pequeñas */
+        padding: 5vw; /* Ajuste de padding para pantallas pequeñas */
     }
 
     h1 {
@@ -105,5 +105,10 @@ body, html {
 
     #countdown {
         font-size: 6vw; /* Tamaño más grande del reloj para pantallas pequeñas */
+    }
+
+    /* Eliminamos cualquier margen o espacio entre las páginas */
+    .page {
+        margin: 0;  /* Asegura que no haya separación entre las páginas */
     }
 }
