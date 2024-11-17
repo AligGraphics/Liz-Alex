@@ -14,24 +14,20 @@ body {
     font-family: 'EBGaramond', serif;
     background-color: #f4f4f4;
     color: #333;
-    width: 100%;
+    width: 100%; /* Asegura que el ancho de la página ocupe el 100% */
     overflow-x: hidden; /* Elimina el desplazamiento horizontal */
-    padding: 0; /* Asegura que no haya padding extra en el cuerpo */
-    height: 100%; /* Evita que el cuerpo se expanda más de lo necesario */
 }
 
 /* Simulación de páginas tipo PDF */
 .page {
     background: white;
-    width: 100%;  /* Se ajusta al 100% del ancho de la pantalla */
-    height: auto;
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
-    margin: 0; /* Sin margen entre las páginas */
-    padding: 5vw; /* Ajuste del espaciado dentro de cada página */
+    padding: 20px;
+    width: 100%; /* Esto hace que ocupe el 100% del ancho */
+    max-width: 100%; /* Evita que se quede con un límite fijo */
+    box-sizing: border-box; /* Garantiza que los márgenes y padding no desborden el contenido */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
 }
 
 /* Diferentes fondos para cada página */
@@ -49,66 +45,35 @@ body {
 h1 {
     font-family: 'PinyonScript', cursive;
     text-align: center;
-    font-size: 6vw; /* Ajusta proporcionalmente al ancho del dispositivo */
-    margin: 0;
-    padding: 0;
+    font-size: 2.5em;
+    margin: 20px 0;
 }
 
 h2 {
     font-family: 'EBGaramond', serif;
     text-align: center;
-    margin: 0; /* Elimina el margen */
-    font-size: 3vw; /* Ajuste relativo al tamaño de la pantalla */
-    padding: 0;
+    margin: 20px 0;
 }
 
 /* Galería de imágenes */
 img {
-    width: 100%; /* Las imágenes ocupan todo el ancho disponible */
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    max-width: 100%; /* Evita que se excedan del ancho del contenedor */
     display: block;
-    margin: 0 auto; /* Centra las imágenes */
+    margin: 10px auto;
 }
 
 /* Reloj */
 #countdown {
     text-align: center;
-    font-size: 4vw; /* Tamaño relativo al ancho de la pantalla */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
+    font-size: 1.5em;
+    margin: 20px 0;
 }
 
 /* Eliminar espacios entre páginas */
 body, html {
     scroll-behavior: smooth;
     padding: 0;
-    margin: 0;
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
-
-/* Ajustes específicos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    .page {
-        padding: 5vw; /* Ajuste de padding para pantallas pequeñas */
-    }
-
-    h1 {
-        font-size: 10vw; /* Hacemos los títulos más grandes para pantallas pequeñas */
-    }
-
-    h2 {
-        font-size: 5vw; /* Ajuste para subtítulos en pantallas pequeñas */
-    }
-
-    #countdown {
-        font-size: 6vw; /* Tamaño más grande del reloj para pantallas pequeñas */
-    }
-
-    /* Eliminamos cualquier margen o espacio entre las páginas */
-    .page {
-        margin: 0;  /* Asegura que no haya separación entre las páginas */
-    }
+    overflow-x: hidden; /* Elimina scroll horizontal */
 }
