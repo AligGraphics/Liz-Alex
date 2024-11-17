@@ -10,35 +10,39 @@
 </head>
 
 <body>
-    <!-- Página simulando un PDF -->
-    <div class="page">
-        <header>
-            <h1>Boda de Liz y Alex</h1>
-            <p>¡Estamos emocionados de compartir este día contigo!</p>
-        </header>
-    </div>
+    <!-- Contenedor general de las páginas -->
+    <div class="pages-container">
+        <!-- Página 1 -->
+        <div class="page">
+            <header>
+                <h1>Boda de Liz y Alex</h1>
+                <p>¡Estamos emocionados de compartir este día contigo!</p>
+            </header>
+        </div>
 
-    <div class="page">
-        <!-- Contenido de la siguiente sección -->
-        <section>
-            <h2>Fecha y Ubicación</h2>
-            <p>La boda será el <strong>28 de diciembre de 2024</strong> en <strong>[ubicación]</strong>.</p>
-        </section>
-        <section>
-            <div id="countdown">
-                <h2>Faltan:</h2>
-                <p id="countdown-timer">Cargando...</p>
-            </div>
-        </section>
-    </div>
+        <!-- Página 2 -->
+        <div class="page">
+            <section>
+                <h2>Fecha y Ubicación</h2>
+                <p>La boda será el <strong>28 de diciembre de 2024</strong> en <strong>[ubicación]</strong>.</p>
+            </section>
+            <section>
+                <div id="countdown">
+                    <h2>Faltan:</h2>
+                    <p id="countdown-timer">Cargando...</p>
+                </div>
+            </section>
+        </div>
 
-    <div class="page">
-        <section>
-            <h2>Galería de Fotos</h2>
-            <img src="images/foto1.jpg" alt="Foto de los novios">
-            <img src="images/foto2.jpg" alt="Foto de la boda">
-        </section>
-    </div>
+        <!-- Página 3 -->
+        <div class="page">
+            <section>
+                <h2>Galería de Fotos</h2>
+                <img src="images/foto1.jpg" alt="Foto de los novios">
+                <img src="images/foto2.jpg" alt="Foto de la boda">
+            </section>
+        </div>
+    </div> <!-- Fin de pages-container -->
 
     <script src="scripts/countdown.js"></script>
 </body>

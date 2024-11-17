@@ -19,17 +19,17 @@ body, html {
     color: #333;
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
     box-sizing: border-box;
-    
 }
 
 /* Contenedor para las páginas */
 .pages-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Centra las páginas horizontalmente */
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;                /* Cambiado para usar flexbox */
+    flex-direction: column;       /* Mantén las páginas en una columna */
+    justify-content: flex-start;  /* Empuja las páginas hacia arriba */
+    align-items: center;          /* Centra las páginas horizontalmente */
+    width: 100%;                  /* Toma todo el ancho disponible */
+    max-width: 1200px;            /* Limita el ancho máximo para pantallas grandes */
+    margin: 0 auto;               /* Centra el contenedor horizontalmente */
     padding: 0;
     box-sizing: border-box;
 }
@@ -39,7 +39,7 @@ body, html {
     background: white;
     padding: 2vw;  /* Proporcional al tamaño de la pantalla */
     width: 90vw;   /* Proporcional al tamaño de la pantalla */
-    max-width: 800px; /* Limita el ancho máximo a 1920px (resolución HD) */
+    max-width: 800px; /* Limita el ancho máximo de las páginas */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0; /* Elimina el margen entre las páginas */
