@@ -37,8 +37,8 @@ body, html {
 /* Páginas individuales */
 .page {
     background: white;
-    padding: 5vw;  /* Proporcional al tamaño de la pantalla */
-    width: 80vw;   /* Proporcional al tamaño de la pantalla */
+    padding: 5vw 5vw;  /* Proporcional al tamaño de la pantalla */
+    width: 90vw;   /* Proporcional al tamaño de la pantalla */
     max-width: 800px; /* Limita el ancho máximo de las páginas */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -106,7 +106,7 @@ img {
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 768px) {
     .page {
-        padding: 7vw; /* Aumenta el padding en pantallas pequeñas */
+        padding: 7vw 7vw; /* Aumenta el padding en pantallas pequeñas */
         margin: 0; /* Elimina el margen entre las páginas */
     }
 
