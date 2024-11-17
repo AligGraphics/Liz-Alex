@@ -17,18 +17,21 @@ body {
     width: 100%;
     overflow-x: hidden; /* Elimina el desplazamiento horizontal */
     padding: 0; /* Asegura que no haya padding extra en el cuerpo */
+    height: 100%; /* Evita que el cuerpo se expanda más de lo necesario */
 }
 
 /* Simulación de páginas tipo PDF */
 .page {
     background: white;
-    padding: 5vw; /* Espaciado dentro de la página, ajustado para no agregar más espacio entre páginas */
-    width: 90%;  /* 90% del ancho de la pantalla */
-    max-width: 100%; /* No puede exceder el 100% */
+    width: 100%;  /* Se ajusta al 100% del ancho de la pantalla */
+    height: auto;
     box-sizing: border-box;
+    margin: 0; /* Sin margen entre las páginas */
+    padding: 5vw; /* Ajuste del espaciado dentro de cada página */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0; /* Sin margen entre las páginas */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Diferentes fondos para cada página */
@@ -47,8 +50,8 @@ h1 {
     font-family: 'PinyonScript', cursive;
     text-align: center;
     font-size: 6vw; /* Ajusta proporcionalmente al ancho del dispositivo */
-    margin: 0; /* Elimina el margen superior */
-    padding: 0; /* Elimina el relleno */
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -62,8 +65,8 @@ h2 {
 /* Galería de imágenes */
 img {
     width: 100%; /* Las imágenes ocupan todo el ancho disponible */
-    max-width: 100%; /* Evita que se excedan */
-    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto; /* Centra las imágenes */
 }
@@ -82,5 +85,25 @@ body, html {
     padding: 0;
     margin: 0;
     width: 100%;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .page {
+        padding: 8vw; /* Ajuste de padding para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 10vw; /* Hacemos los títulos más grandes para pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 5vw; /* Ajuste para subtítulos en pantallas pequeñas */
+    }
+
+    #countdown {
+        font-size: 6vw; /* Tamaño más grande del reloj para pantallas pequeñas */
+    }
 }
