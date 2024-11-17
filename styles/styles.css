@@ -23,13 +23,14 @@ body, html {
 
 /* Contenedor para las páginas */
 .pages-container {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto; /* Centra el contenedor en pantallas grandes */
-    padding: 0 10px; /* Espaciado horizontal para pantallas grandes */
+    align-items: center;  /* Centra las páginas horizontalmente */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Páginas individuales */
@@ -37,12 +38,13 @@ body, html {
     background: white;
     padding: 2vw;  /* Proporcional al tamaño de la pantalla */
     width: 90vw;   /* Proporcional al tamaño de la pantalla */
-    max-width: 800px; /* Limita el ancho máximo en pantallas grandes */
+    max-width: 1920px; /* Limita el ancho máximo a 1920px (resolución HD) */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    margin: 0; /* Elimina el margen entre las páginas */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
