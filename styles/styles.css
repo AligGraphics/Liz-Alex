@@ -107,6 +107,7 @@ img {
 @media (max-width: 768px) {
     .page {
         padding: 5vw; /* Aumenta el padding en pantallas pequeñas */
+        margin: 2vw; /* Reduce el margen de las páginas */
     }
 
     h1 {
