@@ -16,7 +16,8 @@ body, html {
     height: 100%;
     font-family: 'EBGaramond', serif;
     background-color: #f4f4f4;
-    color: #333;
+    /*color: #333; */
+    color:black;
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
     box-sizing: border-box;
 }
@@ -68,7 +69,7 @@ h1 {
     font-weight: normal;  /* Asegúrate de que el peso sea normal */
     font-family: 'PinyonScript', cursive;
     text-align: center;
-    font-size: 5vw;  /* Tamaño proporcional */
+    font-size: 7vw;  /* Tamaño proporcional */
     margin: 2vh 0;
 }
 
@@ -112,7 +113,7 @@ img {
     }
 
     h1 {
-        font-size: 8vw; /* Ajusta el tamaño del título */
+        font-size: 10vw; /* Ajusta el tamaño del título */
         font-weight: normal;  /* Asegúrate de que el peso sea normal */
     }
 
@@ -139,11 +140,18 @@ img {
     height: 3em;              /* La altura de la imagen será 3 veces el alto del texto */
 }
 
+.imagen-iconos {
+    display: block;           /* Asegura que la imagen se muestre como bloque */
+    margin: 20px auto;        /* Centra la imagen horizontalmente */
+    width: auto;              /* Mantiene la relación de aspecto */
+    height: 5em;              /* La altura de la imagen será 3 veces el alto del texto */
+}
+
 /* Página con imagen de fondo */
 .background-page {
     position: relative;
     width: 100%;
-    height: 120vw; /* Asegura que la página ocupe toda la altura de la ventana */
+    height: 150vw; /* Asegura que la página ocupe toda la altura de la ventana */
     background-image: url('../images/A&A-5.jpg'); /* Ruta de tu imagen */
     background-size: cover;  /* Mantiene la proporción de la imagen */
     background-position: center;  /* Centra la imagen */
@@ -169,4 +177,33 @@ img {
 
 .text-overlay p {
     font-size: 1.5vw;
+}
+
+
+
+/* Estilo para el botón de ubicación */
+.btn-ubicacion {
+    display: inline-block;
+    background-color: #641316; /* Color vino */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'EBGaramond', serif;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid white; /* Agrega el borde blanco */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición para el fondo y el borde */
+}
+
+/* Centrar el botón dentro de su contenedor */
+.page section {
+    text-align: center; /* Centra el contenido dentro de la sección */
+}
+
+/* Efecto hover para cambiar el color del fondo y borde */
+.btn-ubicacion:hover {
+    background-color: #a8383a; /* Color vino más claro al pasar el mouse */
+    border-color: #fff; /* Asegura que el borde se mantenga blanco al hacer hover */
 }
