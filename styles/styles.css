@@ -114,11 +114,18 @@ img {
     height: auto;              /* La altura de la imagen será 3 veces el alto del texto */
 }
 
+.imagen-logo {
+    display: block;           /* Asegura que la imagen se muestre como bloque */
+    margin: 20px auto;        /* Centra la imagen horizontalmente */
+    width: auto;              /* Mantiene la relación de aspecto */
+    height: 5em;              /* La altura de la imagen será 3 veces el alto del texto */
+}
+
 .imagen-iconos {
     display: block;           /* Asegura que la imagen se muestre como bloque */
     margin: 20px auto;        /* Centra la imagen horizontalmente */
     width: auto;              /* Mantiene la relación de aspecto */
-    height: 6em;              /* La altura de la imagen será 3 veces el alto del texto */
+    height: 5em;              /* La altura de la imagen será 3 veces el alto del texto */
 }
 
 /* Página con imagen de fondo */
