@@ -158,7 +158,7 @@ img {
 }
 
 .text-overlay p {
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 
@@ -224,5 +224,9 @@ img {
 
     .text-overlay {
         top: 1em; /* Ajusta este valor para controlar la distancia desde el borde superior */
+    }
+
+    .text-overlay p {
+        font-size: 2.7vw;
     }
 }
