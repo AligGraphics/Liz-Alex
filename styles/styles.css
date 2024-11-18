@@ -105,33 +105,7 @@ img {
     margin: 2vh 0;
 }
 
-/* Media Queries para dispositivos pequeños */
-@media (max-width: 768px) {
-    .page {
-        padding: 5em 5em; /* Aumenta el padding en pantallas pequeñas */
-        margin: 0; /* Elimina el margen entre las páginas */
-    }
 
-    h1 {
-        font-size: 10vw; /* Ajusta el tamaño del título */
-        font-weight: normal;  /* Asegúrate de que el peso sea normal */
-    }
-
-    h2 {
-        font-size: 5vw; /* Ajusta el tamaño del subtítulo */
-        font-weight: normal;  /* Asegúrate de que el peso sea normal */
-    }
-
-    p {
-        text-align: center;
-        padding: 0 1em;
-    }
-    
-
-    #countdown {
-        font-size: 3vw;
-    }
-}
 
 .imagen-fecha {
     display: block;           /* Asegura que la imagen se muestre como bloque */
@@ -189,7 +163,7 @@ img {
     padding: 10px 20px;
     text-decoration: none;
     font-family: 'EBGaramond', serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
@@ -206,4 +180,37 @@ img {
 .btn-ubicacion:hover {
     background-color: #a8383a; /* Color vino más claro al pasar el mouse */
     border-color: #fff; /* Asegura que el borde se mantenga blanco al hacer hover */
+}
+
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .page {
+        padding: 5em 5em; /* Aumenta el padding en pantallas pequeñas */
+        margin: 0; /* Elimina el margen entre las páginas */
+    }
+
+    h1 {
+        font-size: 10vw; /* Ajusta el tamaño del título */
+        font-weight: normal;  /* Asegúrate de que el peso sea normal */
+    }
+
+    h2 {
+        font-size: 5vw; /* Ajusta el tamaño del subtítulo */
+        font-weight: normal;  /* Asegúrate de que el peso sea normal */
+    }
+
+    p {
+        text-align: center;
+        padding: 0 1em;
+    }
+    
+
+    #countdown {
+        font-size: 3.8vw;
+    }
+
+    .btn-ubicacion{
+        font-size: 4vw;
+    }
 }
