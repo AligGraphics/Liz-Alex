@@ -128,6 +128,13 @@ img {
     height: 5em;              /* La altura de la imagen será 3 veces el alto del texto */
 }
 
+.imagen-itinerario {
+    display: block;           /* Asegura que la imagen se muestre como bloque */
+    margin: 20px auto;        /* Centra la imagen horizontalmente */
+    width: 30em;              /* Mantiene la relación de aspecto */
+    height: auto;              /* La altura de la imagen será 3 veces el alto del texto */
+}
+
 /* Página con imagen de fondo */
 .background-page {
     position: relative;
